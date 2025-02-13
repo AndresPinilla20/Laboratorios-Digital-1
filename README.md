@@ -103,7 +103,7 @@ Para la implementación física del sistema se empleó una **FPGA** como unidad 
 </p>
 
 <p align="center"><strong>Video explicativo </strong></p> 
-<p style="text-align: center;">
+<p style="text-align: center">
   <a href="https://youtu.be/C3COS4yHkTs?si=Q6Wph2sFdSqt-Fu1">
     <img src="https://img.youtube.com/vi/C3COS4yHkTs/0.jpg" alt="Ver el video">
   </a>
