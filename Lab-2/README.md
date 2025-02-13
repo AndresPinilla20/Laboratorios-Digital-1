@@ -28,7 +28,7 @@ Después de un análisis detallado, se definieron las siguientes **entradas y sa
 Tras definir las entradas y sus funciones, se elaboró una **tabla de verdad** para establecer cómo variará cada salida en función de las combinaciones de las entradas. Esta tabla permite estructurar el comportamiento del sistema según las diferentes condiciones operativas.  
 
 <p align="center">
-    <img src="Lab-2/Tabla de verdad.png" width="60%">
+    <img src="Tabla de verdad.png" width="60%">
 </p>
 <p align="center">
     <strong>Tabla 2. Tabla de Verdad </strong>
@@ -50,24 +50,24 @@ El **diagrama de flujo** nos permitió visualizar el comportamiento global del s
 ### Mapas de Karnaugh  
 
 <p align="center"><strong>Figura 1. Mapa de Karnaugh para Q0.1</strong></p>  
-<p align="center"><img src="Lab-2/Karnaugh q1.png" width="60%"></p>  
+<p align="center"><img src="Karnaugh q1.png" width="60%"></p>  
 
 <p align="center"><strong>Figura 2. Mapa de Karnaugh para Q0.2</strong></p>  
-<p align="center"><img src="Lab-2/Karnaugh q2.png" width="60%"></p>  
+<p align="center"><img src="Karnaugh q2.png" width="60%"></p>  
 
 <p align="center"><strong>Figura 3. Mapa de Karnaugh para Q0.3</strong></p>  
-<p align="center"><img src="Lab-2/Karnaugh q3.png" width="60%"></p>  
+<p align="center"><img src="Karnaugh q3.png" width="60%"></p>  
 
 <p align="center"><strong>Figura 4. Mapa de Karnaugh para Q0.4</strong></p>  
-<p align="center"><img src="Lab-2/Karnaugh q4.png" width="60%"></p>  
+<p align="center"><img src="Karnaugh q4.png" width="60%"></p>  
 
 <p align="center"><strong>Figura 5. Mapa de Karnaugh para Q0.5</strong></p>  
-<p align="center"><img src="Lab-2/Karnaugh q5.png" width="60%"></p>  
+<p align="center"><img src="Karnaugh q5.png" width="60%"></p>  
 
 ### Diagrama de Flujo del Sistema  
 
 <p align="center"><strong>Figura 6. Diagrama de flujo del sistema</strong></p>  
-<p align="center"><img src="Lab-2/Digrama_De_Flujo_Dig_1-1.png" width="100%"></p>  
+<p align="center"><img src="Digrama_De_Flujo_Dig_1-1.png" width="100%"></p>  
 
 ## 2. Proceso del dominio estructural
 
@@ -80,7 +80,7 @@ Una vez verificado que la lógica expresada en el diagrama de flujo y los mapas 
 
 <p align="center"><strong>Figura 7. Circuito Digital - Compuertas Logicas</strong></p> 
 <p align="center">
-    <img src="Lab-2/Compuertas logicas.png" width="60%">
+    <img src="Compuertas logicas.png" width="60%">
 </p>
 
 ## 3. Lenguaje Ladder
@@ -89,7 +89,7 @@ Después de validar la lógica mediante los diagramas de flujo y los mapas de Ka
 
 <p align="center"><strong>Figura 8. Diagrama Ladder</strong></p> 
 <p align="center">
-    <img src="Lab-2/Diagrama Ladder.png" width="100%">
+    <img src="Diagrama Ladder.png" width="100%">
 </p>
 
 ## 4. Proceso del dominio físico
@@ -99,7 +99,7 @@ Para la implementación física del sistema se empleó una **FPGA** como unidad 
 
 <p align="center"><strong>Figura 9. Implementación del sistema - FPGA </strong></p> 
 <p align="center">
-    <img src="Lab-2/circuito fpga.png" width="25%">
+    <img src="circuito fpga.png" width="25%">
 </p>
 
 <p align="center"><strong>Video explicativo </strong></p> 
