@@ -21,7 +21,7 @@ Después de un análisis detallado, se definieron las siguientes **entradas y sa
     <strong>Tabla 1. Entradas y salidas del sistema</strong>  
 </p>  
 <p align="center">
-    <img src="/Entradas y salidas.png" width="40%">
+    <img src="Lab-2/Entradas y salidas.png" width="40%">
 </p>  
 
 ### Lógica del sistema  
