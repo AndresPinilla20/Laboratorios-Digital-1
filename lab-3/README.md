@@ -281,4 +281,5 @@ set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
  ![circuito](Imagen/circuito.png)
 </div>
 
-
+#Link del video
+https://youtu.be/NL6AgS18lOE 
