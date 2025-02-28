@@ -19,7 +19,7 @@ En Colombia, la tensión RMS suministrada es de 120V, lo que, al convertirla a s
 
 <div align="center">
  
-![acople](https://github.com/Control-UNAL-2024-2/lab3-voltimetro/blob/26283dac5323d6b9cbf64aaa8c420ed95e5cf11c/Imagen/acople.png)
+![acople](acople.png)
 
 </div>
 ## Ajuste de tensión para el ADC
