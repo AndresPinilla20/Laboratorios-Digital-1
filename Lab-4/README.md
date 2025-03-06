@@ -15,12 +15,6 @@ Dentro de la electrónica digital muchas veces existen desafíos de sistemas que
 ![acople](acople.png)
 
 </div>
-## Ajuste de tensión para el ADC
-
-Dado que el ADC tiene una referencia de 5V, este valor correspondería a 255 Vp en su conversión, lo cual no es el objetivo. Para establecer la tensión adecuada, se emplea un divisor de tensión. A través de una regla de 3, se determina que la tensión deseada es 3.33 V para una entrada de 170 Vp. Dado que la tensión disponible después de la rectificación es de 7.3 V, se implementa un divisor de tensión utilizando un trimmer de 100 KΩ. La resistencia R2, donde debe caer la tensión de 3.33 V, se ajusta a 45.6 KΩ dentro del trimmer.
-
-
-  $$\text{V}_{sal} = V \cdot \cfrac{R2}{R2 + R1}$$
 
 ## Estados presentes
   
