@@ -8,7 +8,7 @@ La elección de una FPGA como plataforma de implementación se fundamenta en su 
 
 Dentro de la electrónica digital muchas veces existen desafíos de sistemas que necesitan tener en cuenta cuál era su función anteriormente para realizar una nueva acción, es acá donde entran las máquinas de estado, pues gracias a la integración de latch tipo D se logra realizar el guardado de un dato durante un ciclo, el cual dura según el clock implementado, esto ayuda a que la máquina pueda verificar que está realizando paso a paso y decida según sus estados y a veces entradas externas, qué debe realizar. Así dentro del contexto del presente proyecto que trata de automatizar el sistema de luminarias de determinado espacio, se ve necesario la implementación de una máquina de estados que permita establecer el tiempo que se mantedrá la salida activa al momento de que se registre o lea una señal de entrada.
 
-## Circuito de Compuertas lógicas es Digital
+## Circuito de Compuertas lógicas en Digital
 
 <div align="center">
  
