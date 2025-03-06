@@ -169,7 +169,7 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to *
 
 <div align="center">
 
- ![circuito](Imagen/circuito.png)
+ ![circuito fisico](circuitortl.png)
 </div>
 
 ## Sensor pir hc-sr501
