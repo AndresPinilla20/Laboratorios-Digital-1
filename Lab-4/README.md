@@ -274,5 +274,12 @@ set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
  ![circuito](Imagen/circuito.png)
 </div>
 
-#Link del video
-https://youtu.be/NL6AgS18lOE 
+## Sensor pir hc-sr501
+
+Es un sensor infrarojo que detecta movimiento, la idea es usarlo para poder automatizar el encendido de luces, y gracias a su modo de funcionamiento con temporizador interno, es posible mantener a salida en 1, durante determinado tiempo. Su rango de alcance de lectura, va de los 3 mts hasta los 7 mts y posee dos modos de operación; un disparo o múltiples disparos. En el caso del proyecto se decide usar la función de múltiples disparos dado que va sumando el tiempo del temporizador cada vez que realiza una lectura, esto aunque una gran solución al problema del proyecto, presenta una limitante y es justamente la suma de los tiempos en lugar de un reset cada vez que registra una lectura, pues si hay mcuahs personas moviéndose, el tiempo de activación podría durar mucho tiempo. Esto es una limitante del sensor que es muy complejo de resolver, pues no posee un clock para que la fpga dirija el temporizador.
+## Módulo de fotocelda
+
+Se trata de un sensor que tiene la capacidad de dar un valor alto cuando no es capaz de leer luz, la sensibilidad a la iluminación con la que vuelve a un nivel bajo, se puede ajustar gracias a la presencia de una resistencia en el módulo. Esta entrada es la prioritaria para poder encender las luces, pues se proyecta que sea el que avise al sistema cuando es de noche, junto con el pir son las entradas que van conectadas a la máquina de estados.
+## Interruptor 
+
+En este caso el interruptor va a tener la función de actuar como un selector de un multiplexsor, el cual si tiene un valor de 0, permite que el circuito opere con la lógica programada; mientras que si tiene un valor de 1, conecta la salida directamente a una fuente de energía, emulando que las luces están siempre encendidas durante la noche.
