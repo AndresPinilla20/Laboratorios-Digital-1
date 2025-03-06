@@ -12,7 +12,7 @@ Dentro de la electrónica digital muchas veces existen desafíos de sistemas que
 
 <div align="center">
  
-![acople](acople.png)
+![circuito](circuitodigital.png)
 
 </div>
 
