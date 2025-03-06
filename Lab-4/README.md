@@ -161,7 +161,7 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to *
 
 <div align="center">
 
- ![rtl](Imagen/rtl.png)
+ ![rtl](circuitortl.png)
 </div>
 
 
