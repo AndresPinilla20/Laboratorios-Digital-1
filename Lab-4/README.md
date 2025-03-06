@@ -1,21 +1,13 @@
-# Laboratorio 3 - Voltimetro 
+En el ámbito de los sistemas digitales, las máquinas de estados representan una herramienta fundamental para el control y la gestión de procesos secuenciales, permitiendo diseñar sistemas complejos con comportamientos predecibles y estructurados. Su aplicación abarca desde sistemas embebidos hasta protocolos de comunicación, destacando por su eficiencia en la transición entre estados definidos bajo condiciones específicas. En este contexto, el presente informe documenta el diseño, implementación y validación de una máquina de estados finitos (FSM, por sus siglas en inglés) desarrollada como parte de un proyecto integrador, cuyo objetivo es controlar un sistema mediante una FPGA (Field-Programmable Gate Array).
 
-- Cuesta Segura Dixon Alberto 
-- Pinilla Martinez Andrés Gustavo
-- Preciado Orobio Yainer Andrés
-
-# Introducción
-
-En esta práctica se diseñará un voltímetro basado en FPGA, empleando un circuito de rectificación y un transformador de 120V a 6V (RMS) para realizar la conversión de tensión. La digitalización de la señal se llevará a cabo mediante el conversor analógico-digital ADC0808, lo que permitirá su procesamiento dentro de la FPGA. Los valores obtenidos se mostrarán en un display de 7 segmentos, facilitando una lectura clara del voltaje.  
-El propósito de la práctica es desarrollar un sistema de medición de voltaje que combine diversos componentes electrónicos para la adquisición, procesamiento y visualización de datos. Para ello, se acondicionará la señal de la red eléctrica utilizando un transformador y un circuito rectificador, seguido de su conversión digital con el ADC0808. Luego, la FPGA procesará la información y controlará el display de 7 segmentos para representar el voltaje en tiempo real. 
-Mediante esta práctica, se estudiará el comportamiento de cada uno de los componentes utilizados y se explorará la interacción entre hardware y software en sistemas de medición programables, destacando la conversión de señales analógicas a digitales y su visualización.
+La elección de una FPGA como plataforma de implementación se fundamenta en su flexibilidad y capacidad de reconfiguración, características que permiten emular circuitos digitales personalizados sin necesidad de fabricar hardware dedicado. Esto facilita la optimización de recursos lógicos, la paralelización de operaciones y la validación iterativa del diseño. Durante el desarrollo, se empleó la herramientaa de descripción de hardware Verilog, para modelar la máquina de estados, así como software de síntesis y simulación (Quartus) para garantizar su correcto funcionamiento antes de la programación física del dispositivo.
 
 # Dominio Comportamental 
 
 
-En Colombia, la tensión RMS suministrada es de 120V, lo que, al convertirla a su valor pico, resulta en aproximadamente 170 Vp. Sin embargo, el ADC requiere una entrada máxima de 5V, considerando que su registro máximo es de 255. Por ello, es necesario establecer una relación de equivalencia que permita ajustar la tensión de entrada al ADC, ya que trabajamos con 170Vp en lugar de 255. Para lograrlo, se implementará un circuito de acoplamiento que recibirá la señal del transformador, la rectificará y reducirá el voltaje mediante un divisor de tensión ajustable con un trimmer. Adicionalmente, para prevenir daños por conexiones incorrectas o cortocircuitos accidentales, se incorporará un diodo Zener de 5.1V, asegurando que la tensión de salida no exceda el límite establecido.
+Dentro de la electrónica digital muchas veces existen desafíos de sistemas que necesitan tener en cuenta cuál era su función anteriormente para realizar una nueva acción, es acá donde entran las máquinas de estado, pues gracias a la integración de latch tipo D se logra realizar el guardado de un dato durante un ciclo, el cual dura según el clock implementado, esto ayuda a que la máquina pueda verificar que está realizando paso a paso y decida según sus estados y a veces entradas externas, qué debe realizar. Así dentro del contexto del presente proyecto que trata de automatizar el sistema de luminarias de determinado espacio, se ve necesario la implementación de una máquina de estados que permita establecer el tiempo que se mantedrá la salida activa al momento de que se registre o lea una señal de entrada.
 
-## Circuito de Acople
+## Circuito de Compuertas lógicas es Digital
 
 <div align="center">
  
@@ -29,7 +21,7 @@ Dado que el ADC tiene una referencia de 5V, este valor correspondería a 255 Vp 
 
   $$\text{V}_{sal} = V \cdot \cfrac{R2}{R2 + R1}$$
 
-## Conversión analógico-digital (ADC0808)
+## Estados presentes
   
   <div align="center">
    
@@ -43,11 +35,11 @@ Las señales START y EOC se conectan en retroalimentación para sincronizar la t
 
 ## Entradas
 
-La señal de medición proviene directamente del tomacorriente, ingresando como una onda de corriente alterna (CA)
+El sistema con 4 entradas en total, dos van directamente a la máquina de estados, y los otros dos hacen parte de un multiplexor que permiten que el sistema opere de forma diferente.
 
 ## Salidas
 
-El sistema cuenta con tres salidas: tres displays de 7 segmentos, los cuales mostrarán el valor de la tensión en la red en unidades, decenas y centenas.
+El sistema cuenta con una única salida.
 
 # Dominio estructural 
 
