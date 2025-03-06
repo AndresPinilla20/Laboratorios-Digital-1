@@ -181,3 +181,6 @@ Se trata de un sensor que tiene la capacidad de dar un valor alto cuando no es c
 ## Interruptor 
 
 En este caso el interruptor va a tener la función de actuar como un selector de un multiplexsor, el cual si tiene un valor de 0, permite que el circuito opere con la lógica programada; mientras que si tiene un valor de 1, conecta la salida directamente a una fuente de energía, emulando que las luces están siempre encendidas durante la noche.
+
+# Video
+https://youtube.com/shorts/jvM0stkUwHA
